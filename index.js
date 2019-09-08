@@ -242,7 +242,7 @@ Color.prototype = {
 			return new Color(val);
 		}
 
-		return colorString.to.hex(this.rgb().round().color);
+		return colorString.to.hex(this.rgb().round().color, this.valpha);
 	},
 
 	rgbNumber: function () {
